@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header nav{
+    background: linear-gradient(to right, #a517ba, #5f1782);
+}
+header nav #navbar-nav{
+    font-size: 20px !important;
+    transition: .5s;
+}
+header nav #logo:hover{
+    background: none;
+    border-radius: none;
+}
+header nav a:hover{
+    background: linear-gradient(to right, #a517ba, #5f1482);
+    border-radius: 10px;
+}
+
+header nav button{
+    font-size: 35px !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+/*------------ content section -----------*/
+#content{
+    background: linear-gradient(to right, #a517ba, #5f1482);
+}
+#content #text{
+    margin: 200px 0;
+}
+#content #text h1{
+    font-size: 55px;
+}
+#content > img{
+    width: 100%;
+}
+#content #text{
+    text-align: center;
+}
+#content #text p{
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+#content #text #img-play{
+    width: 50px;
+}
+#content #text button{
+    background: linear-gradient(to right, #a517ba, #5f1482);
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transition: .9s;
+}
+#content #text button:hover{
+    background: linear-gradient(to right, #a615bd, #8410b9);
+}
+#content .link-img-play{
+    width: 50px;
+}
+/*------------------ button swipe up ----------------------*/
+.swipe-up{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+}
+.swipe-up i{
+    font-size: 40px;
+    color: #a517ba;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+/*------------- Service -------------------*/
+.title::before{
+    content: '';
+    background: linear-gradient(to right, #a517ba, #5f1482);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 5px;
+    transform: translateY(63px);
+}
+
+@media (min-width:992px){
+#service,
+#about-us,
+#testimanials,
+#social-media{
+    position: relative;
+    height: 100vh;
+}
+#service .container,
+#about-us .container,
+#testimanials .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+
+#service img{
+    width: 100px;
+    margin: 10px 0;
+}
+#service p{
+    line-height: 2;
+}
+#showAll{
+    width: 150px;
+}
+/*------------- About us -------------------*/
+
+#we{
+    font-size: 50px;
+}
+.about-us .row{
+    margin: 150px 0;
+}
+.about-us ul li{
+    font-size: 25px;
+    margin: 10px 0;
+}
+/*------------- testimanials -------------------*/
+.testimanials .container .row{
+    margin: 250px 0;
+}
+.testimanials .container .row .col-lg-6{
+    border-left: 4px solid orange;
+}
+.testimanials .container .row img{
+    width: 50px;
+    border-radius: 50%;
+}
+/*------------- social media -------------------*/
+#social-media {
+    width: 100%;
+    height: 60vh;
+}
+#social-media img {
+    width: 130px;
+    cursor: pointer;
+}
+#social-media #images {
+    margin: 200px 0;
+    margin-bottom: 180px;
+    text-align: center;
+    transition: .9s;
+}
+#social-media #images img:hover{
+    transform: translateY(-15px);
+}
+@media (min-width:768px) and (max-width:991px){
+    #social-media #images img{
+        width: 100px;
+    }
+}
+@media(max-width:767px){
+    #social-media #images img{
+        width: 92px;
+    }
+#service,
+#about-us,
+#testimanials,
+#social-media{
+    position: none;
+    height: fit-content;
+}
+
+}
+/*------------- footer -------------------*/
+footer{
+    background: linear-gradient(to right, #a517ba, #5f1482);
+}
+footer > img{
+    width: 100%;
+}
+#address{
+    opacity: .8;
+}
+#box-address i{
+    margin-right: 10px;
+    background: linear-gradient(to right, #a517ba, #5f1482);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+#box-address p{
+    cursor: pointer;
+}
+#box-message form button{
+    letter-spacing: 1.5px;
+    border: 1px solid #0dcaf0;
+    transition: .5s;
+}
+#box-message form button:hover{
+    box-shadow: 0 1px 3px 2px #0dcaf0;
+}
